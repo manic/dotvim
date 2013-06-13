@@ -1,17 +1,6 @@
-" showmarks
-let g:showmarks_enable = 0 " disabled by default by populardemand ;)
-hi! link ShowMarksHLl LineNr
-hi! link ShowMarksHLu LineNr
-hi! link ShowMarksHLo LineNr
-hi! link ShowMarksHLm LineNr
-
 " syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
-
-" delimitMate
-let g:delimitMate_expand_space = 1
-let g:delimitMate_expand_cr = 1
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
@@ -29,16 +18,16 @@ let Tlist_Show_Menu=1
 nmap <leader>t :TlistToggle<CR>
 
 " sessionman
-nmap <leader>S :SessionList<CR>
-nmap <leader>SS :SessionSave<CR>
-nmap <leader>SA :SessionSaveAs<CR>
+"nmap <leader>S :SessionList<CR>
+"nmap <leader>SS :SessionSave<CR>
+"nmap <leader>SA :SessionSaveAs<CR>
 
-let g:Conque_Read_Timeout = 50 " timeout for waiting for command output.
-let g:Conque_TERM = 'xterm'
+"let g:Conque_Read_Timeout = 50 " timeout for waiting for command output.
+"let g:Conque_TERM = 'xterm'
 " ,sh shell window
-nmap <Leader>sh :ConqueSplit bash<cr>
+"nmap <Leader>sh :ConqueSplit bash<cr>
 " ,r run command
-nmap <Leader>R :ConqueSplit
+"nmap <Leader>R :ConqueSplit
 
 " yankring
 let g:yankring_replace_n_pkey = '<leader>['
@@ -117,14 +106,14 @@ let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
 
 " Utl.vim
-if has("mac")
-  let g:utl_cfg_hdl_scm_http_system = "!open '%u'"
-end
-nmap <leader>o :Utl
+"if has("mac")
+  "let g:utl_cfg_hdl_scm_http_system = "!open '%u'"
+"end
+"nmap <leader>o :Utl
 
 " VimOrganizer
-au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
-au BufEnter *.org call org#SetOrgFileType()
+"au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+"au BufEnter *.org call org#SetOrgFileType()
 
 " Gundo
 nmap <leader>u :GundoToggle<CR>
@@ -139,3 +128,12 @@ autocmd FileType haml let b:switch_definitions =
       \   g:switch_builtins.true_false,
       \   g:switch_builtins.true_false,
       \ ]
+
+" vim-turbux
+let g:no_turbux_mappings = 1
+let g:turbux_runner  = 'tslime'
+map <leader>test <Plug>SendTestToTmux
+map <leader>r <Plug>SendFocusedTestToTmux
+map <leader>q :ResetTmuxVars<CR>
+
+let g:turbux_command_rspec  = 'spring rspec'        " default: rspec

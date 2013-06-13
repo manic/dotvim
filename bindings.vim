@@ -70,5 +70,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" tab navigation
+nnoremap tl :tabnext<CR>
+nnoremap th :tabprev<CR>
+nnoremap tn :tabnew<CR>
+nnoremap td :tabclose<CR>
+
+
 " fast expand current file's directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>

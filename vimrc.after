@@ -1,0 +1,39 @@
+colorscheme railscasts
+set background=dark
+
+let g:rails_projections = {
+      \ "app/cells/*.rb": { "command": "cells" },
+      \ "app/cells/*/*.rb": { "command": "cells" },
+      \ "app/presenters/*.rb": { "command": "presenters" },
+      \ "app/observers/*.rb": { "command": "observers" },
+      \ "app/services/*.rb": { "command": "services" },
+      \ "app/serializers/*.rb": { "command": "serializers" },
+      \ "app/extras/form_object/*.rb": {"command": "forms"},
+      \ "app/forms/*.rb": {"command": "forms"},
+      \ "app/extras/service/*.rb": {"command": ["services", "forms", "models"]},
+      \ "app/extras/view_object/*.rb": {"command": "views"},
+      \ "app/models/fields/*.rb": {"command": "fields"},
+      \ "app/models/fields_data/*.rb": {"command": "fields"},
+      \ "app/models/concerns/*.rb": {"command": ["models", "concerns"]},
+      \ "app/models/reports/*.rb": {"command": "reports"},
+      \ "spec/factories/*.rb": {"command": "factories"},
+      \ "spec/factories/fields/*.rb": {"command": "factories"},
+      \ "spec/features/*.rb": {"command": "features"},
+      \ "spec/support/*.rb": {"command": "supports"},
+      \ "lib/tasks/*.rake": {"alternate": ["spec/lib/tasks/%s.rake_spec.rb"]},
+      \ "app/assets/javascripts/*.js.coffee": {"alternate": ["spec/javascripts/%s_spec.js.coffee"]},
+      \ "spec/javascripts/*_spec.js.coffee": {"alternate": ["app/assets/javascripts/%s.js.coffee"]}
+      \ }
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Search Dash for word under cursor
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! SearchDash()
+  let s:browser = "/usr/bin/open"
+  let s:wordUnderCursor = expand("<cword>")
+  let s:url = "dash://".s:wordUnderCursor
+  let s:cmd ="silent ! " . s:browser . " " . s:url
+  execute s:cmd
+  redraw!
+endfunction
+map <leader>d :call SearchDash()<CR>
