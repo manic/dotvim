@@ -19,6 +19,9 @@ Bundle 'astrails/vim-powerline'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'AndrewRadev/switch.vim'
 
+" Elixir
+Bundle 'elixir-lang/vim-elixir'
+
 " Ruby/Rails
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
