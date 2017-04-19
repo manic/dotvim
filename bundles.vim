@@ -28,6 +28,9 @@ Bundle 'ilake/vim-turbux'
 Bundle 'ilake/vim-tslime'
 Bundle 'tpope/vim-endwise'
 
+" Elixir
+Bundle 'elixir-lang/vim-elixir'
+
 " color themes
 Bundle 'jpo/vim-railscasts-theme'
 
