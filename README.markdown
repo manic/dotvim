@@ -31,7 +31,6 @@ announcements of new versions, tips, etc.
 * [Interesting Plugins](#interesting)
   * [nerdtree](#nerdtree)
   * [nerdcommenter](#nerdcommenter)
-  * [Command-T](#Command-T)
   * [CtrlP](#CtrlP)
   * [AutoComplPop](#AutoComplPop)
   * [taglist.vim](#taglist.vim)
@@ -219,8 +218,7 @@ execute it with `@a`.
 
     hax0r vim script to give you a tree explorer
 
-    * `Ctrl-P` - open directory browser (**Note:** this is now handled by
-      [nerdtree-tabs](#nerdtreetabs) (see below))
+    * `Ctrl-P` - open directory browser
     * `,p` - to find and highlight the currently open file in the tree
 
 *   <a name=nerdcommenter>[nerdcommenter](http://github.com/scrooloose/nerdcommenter) ([top](#top))
@@ -231,23 +229,6 @@ execute it with `@a`.
     * `,cc` - add commenting
     * `,cu` - Uncomment
     * check docs for more
-
-*   <a name=Command-T>[Command-T](http://github.com/vim-scripts/Command-T) ([top](#top))
-
-    TextMate Command-T like file finder for vim
-
-    Note: This plugin is currently **DISABLED**. See [CtrlP](#CtrlP) plugin
-    that is used instead
-
-    * `,,` - `CommandT` - find file
-    * `,.` - `CommandTFlush` - refresh the file list and then find a file
-    * while at the finder prompt:
-      * `Ctrl-Enter` - open file in a new split
-      * `Ctrl-s` - open file in a new split
-      * `Ctrl-v` - open file in a new vertical split
-      * `Ctrl-U` - clear current partial path
-      * `Esc` - cancel
-      * `Ctrl-c` - cancel
 
 *   <a name=CtrlP>[CtrlP](https://github.com/kien/ctrlp.vim) ([top](#top))
 
