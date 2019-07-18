@@ -12,7 +12,7 @@ cleanup:
 	rm -rf bundle
 
 install-vundle:
-	test -d bundle/vundle || (mkdir -p bundle && cd bundle && git clone https://github.com/gmarik/vundle.git)
+	test -d bundle/Vundle.vim || (mkdir -p bundle && cd bundle && git clone https://github.com/VundleVim/Vundle.vim.git)
 
 bundles:
 	vim -u ./bundles.vim +BundleClean! +BundleInstall

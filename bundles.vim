@@ -1,56 +1,58 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'L9'
-Bundle 'othree/vim-autocomplpop'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround'
-Bundle 'epmatsw/ag.vim'
-Bundle 'astrails/vim-powerline'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'AndrewRadev/switch.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'L9'
+Plugin 'othree/vim-autocomplpop'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'epmatsw/ag.vim'
+Plugin 'astrails/vim-powerline'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'AndrewRadev/switch.vim'
 
 " Ruby/Rails
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-rake'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'ilake/vim-turbux'
-Bundle 'ilake/vim-tslime'
-Bundle 'tpope/vim-endwise'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rake'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'ilake/vim-turbux'
+Plugin 'ilake/vim-tslime'
+Plugin 'tpope/vim-endwise'
 
 " Elixir
-Bundle 'elixir-lang/vim-elixir'
+Plugin 'elixir-lang/vim-elixir'
 
 " color themes
-Bundle 'jpo/vim-railscasts-theme'
+Plugin 'jpo/vim-railscasts-theme'
 
 " syntax support
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tsaleh/vim-tmux'
-Bundle 'Puppet-Syntax-Highlighting'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-markdown'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'vitaly/vim-syntastic-coffee'
-Bundle 'vim-scripts/jade.vim'
-Bundle 'wavded/vim-stylus'
-Bundle 'VimClojure'
-Bundle 'slim-template/vim-slim'
-Bundle 'elzr/vim-json'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tsaleh/vim-tmux'
+Plugin 'Puppet-Syntax-Highlighting'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'vitaly/vim-syntastic-coffee'
+Plugin 'vim-scripts/jade.vim'
+Plugin 'wavded/vim-stylus'
+Plugin 'VimClojure'
+Plugin 'slim-template/vim-slim'
+Plugin 'elzr/vim-json'
 
 " Support and minor
-Bundle 'kana/vim-textobj-user'
-Bundle 'tpope/vim-repeat'
-Bundle 'vitaly/vim-gitignore'
+Plugin 'kana/vim-textobj-user'
+Plugin 'tpope/vim-repeat'
+Plugin 'vitaly/vim-gitignore'
 
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
+
+call vundle#end()

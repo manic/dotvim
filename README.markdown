@@ -7,7 +7,7 @@ All the right plugins are in. Nerdtree, CtrlP, you name it.
 The focus is on supporting Rails, but there is a lot of generic stuff too, so
 it will surely serve you well with any language of your choice.
 
-The config is using [Vundle](http://github.com/gmarik/vundle) for easy
+The config is using [Vundle](http://github.com/VundleVim/Vundle.vim) for easy
 upgrading.
 
 *Some* help tips are provided for *some* of the plugins. please check out the
