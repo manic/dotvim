@@ -4,7 +4,7 @@ let g:syntastic_auto_loc_list=2
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
-nmap <C-P> :NERDTreeTabsToggle<CR>
+nmap <C-P> :NERDTreeToggle<CR>
 " ,p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
 
@@ -136,4 +136,4 @@ map <leader>test <Plug>SendTestToTmux
 map <leader>r <Plug>SendFocusedTestToTmux
 map <leader>q :ResetTmuxVars<CR>
 
-let g:turbux_command_rspec  = 'spring rspec'        " default: rspec
+let g:turbux_command_rspec  = 'bundle exec rspec'        " default: rspec
