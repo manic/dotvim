@@ -17,6 +17,9 @@ vmap <leader>/ :call NERDComment(0, "invert")<cr>
 let Tlist_Show_Menu=1
 nmap <leader>t :TlistToggle<CR>
 
+" powerline
+set rtp+=/Users/manicc/Library/Python/3.7/lib/python/site-packages/powerline/bindings/vim
+
 " sessionman
 "nmap <leader>S :SessionList<CR>
 "nmap <leader>SS :SessionSave<CR>

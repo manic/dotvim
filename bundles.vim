@@ -14,7 +14,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'epmatsw/ag.vim'
-Plugin 'astrails/vim-powerline'
+Plugin 'powerline/powerline'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'AndrewRadev/switch.vim'
 
