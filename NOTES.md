@@ -1,9 +1,9 @@
-## 筆記與快速鍵
+## Notes and Shortcuts
 
-- 針對 plugin 的設定目前放在 `plugins.vim`
-- mapleader 的設定在 `global.vim`, 目前使用 `,`
+- plugin stuff is in `plugins.vim`
+- mapleader configuration is in `global.vim`, using `,` now
 
-### 快速鍵
+### Shortcut
 
 #### Priority: High
 
@@ -12,6 +12,9 @@
 * [NERDcommenter] `,/` - toggle comment
 * [CtrlP] `,,` - `CtrlP` - fuzzy find.
 * [CtrlP] `,b` - `CtrlPBuff` - fuzzy search open buffers
+* [Switch] `:Switch` - it will switch `"foo"` to `'foo'` to `:foo`. or
+  `{:foo => bar}` to `{foo: bar}`
+* [syntastic] `:Errors` - display a window detailing the errors
 
 #### Priority: Medium
 
@@ -19,20 +22,23 @@
   searches the files (not including MRU and buffers)
 * [CtrlP] `,l` - `CtrlPLine` - fuzzy search lines in all opened buffers
 
+### Install macvim
 
-### 安裝 powerline
+`brew install macvim`
+
+### Install powerline
 
 https://powerline.readthedocs.io/en/latest/overview.html
 
-1. 安裝 python plugin
+1. Install python plugin
 `$pip3 install powerline-status`
 
-2. 安裝 powerline 可以用的 fonts
+2. Install powerline 可以用的 fonts
 https://github.com/powerline/fonts
 
-3. 更新 `plugins.vim`
+3. Improve `plugins.vim`
 
 ```vim
-set rtp+=/Users/manicc/Library/Python/3.7/lib/python/site-packages/powerline/bindings/vim
+set rtp+={{$HOME}}/Library/Python/3.7/lib/python/site-packages/powerline/bindings/vim
 ```
 
